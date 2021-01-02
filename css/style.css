@@ -1,0 +1,374 @@
+@import "./fondo.css";
+html {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+
+}
+ 
+*, *:before, *:after {
+  box-sizing:inherit;
+ }
+
+ img {
+   width: 100%;
+ }
+
+ body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #000;
+ }
+ 
+ header{
+   background: #557e7c;
+   color: #ebebd3;
+   padding: 1em 0;
+   position: relative;
+ }
+
+ .Container-nav {
+   display: flex;
+   justify-content: space-around;
+   /* border: 1px solid red; */
+   
+ }
+
+ .Fondo {
+  background: #50a3a2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.logo{
+  font-size: 1rem;
+  /* margin: 0; */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.site-nav{
+  top:100%;
+  right:0;
+  position: absolute;
+  background: #464655;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+}
+
+.site-nav-open{
+  clip-path: circle(150% at top right);
+}
+
+.site-nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li{
+  border-bottom: 1px solid #575766;
+}
+
+.site-nav a{
+  color: #ebedb3;
+  display: block;
+  padding: 2em 6em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus{
+  background: #e4b363;
+  color: #464655;
+}
+
+.site-nav--icon{
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle{
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em; 
+}
+/*esto mueve a una x el menu hamburger*/
+.menu-open .hamburger{
+  transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+  opacity: 0;
+}
+.menu-open .hamburger::after{
+  transform: translateY(-3px) rotate(-90deg);
+}
+/* Esto crea las lineas del menu de hamburgesa */
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+  transform: translateY(-6px);
+}
+.hamburger::after{
+  transform: translateY(3px);
+}
+
+
+.Fondo-textContenedor {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  text-align: center;
+  color:wheat; 
+}
+
+.Fondo-text {
+  font-size: 2rem;
+  margin: 20px 0 10px 0;
+}
+
+.Fondo-correo {
+  margin-bottom: 5px;
+}
+
+.Fondo-barraSocial {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.Fondo-link {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.Main {
+  padding: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+.Main-title {
+  margin-top: 0;
+  /* padding-top: 20px; */
+}
+
+.Main-p {
+  margin: 20px;
+}
+
+.Conocimientos {
+  padding: 20px 0;
+}
+
+.Conocimientos-title {
+  font-size: 2rem;
+  text-align: center;
+  color:white;
+}
+
+
+
+.Conocimientos-card {
+  border: 1px solid #000;
+  margin: 30px;
+  position: relative;
+  background-color: #000;
+  /* z-index: 10; */
+}
+
+.Conocimientos-card:before {
+  content: '';
+  position:absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  /* background: black; */
+  /* border: 1px solid red; */
+  transform: skew(2deg, 2deg);
+  z-index: -1;
+}
+
+.Conocimientos-card:nth-child(1):before {
+  background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.Conocimientos-card:nth-child(2):before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.Conocimientos-card:nth-child(3):before {
+  background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.Conocimientos-card:nth-child(4):before {
+  background: linear-gradient(315deg, #ff0000, #ffc107); 
+}
+
+.Conocimientos-card:nth-child(5):before {
+  background: linear-gradient(315deg, #095379, #08d0f9); 
+}
+.Conocimientos-cardTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.Conocimientos-cardText {
+  text-align: center;
+  color: white;
+}
+
+.Conocimientos-ul {
+  color: white;
+
+}
+
+
+.Experience {
+  padding: 20px;
+  background-color: white;
+}
+
+.Experience-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Experience-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Experience-cart {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.Experience-imageContainer {
+  height: 150px;
+  overflow: scroll;
+  border: 1px solid black;
+}
+
+.Expirence-cardTitle {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.Experience-year {
+  font-size: .6rem;
+  position: relative;
+  bottom: 6px;
+  font-weight:normal;
+}
+
+.Expirence-skills {
+  font-size: .8rem;
+}
+
+.Experience-link {
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-top: 5px;
+  display: inline-block;
+  padding: 10px;
+  /* background-color: black; */
+}
+
+.Proyects-title {
+  text-align: center;
+  color:white;
+}
+
+@media (min-width:700px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      padding-top: 10px;
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+
+  .site-nav a{
+      padding: 0;
+      margin-left: 3em;
+  }
+  .site-nav--icon{
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+  }
+
+
+  .Fondo-textContenedor {
+    margin-top: 10%;
+  }
+
+  .Fondo-text {
+    font-size: 2rem;
+    margin: 20px;
+    line-height: 50px;
+  }
+
+
+
+
+  .Main-p {
+    line-height: 55px;
+  }
+
+
+  .Conocimientos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .Conocimientos-card {
+    width: 35%;
+  }
+
+
+  .Experience-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .Experience-cart {
+    width: 380px;
+  }
+
+
+}
