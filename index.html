@@ -20,18 +20,18 @@
     <!--home--->
     <!-- <div class="overlay position-absolute"></div> -->
 
-    <header>
+    <header id="inicio">
       <div class="Container-nav">
         <!-- <div class="container"> -->
-            <h1 class="logo">Logo <span>Empresa</span></h1>
+            <!-- <h1 class="logo">Logo <span>Empresa</span></h1> -->
         <!-- </div> -->
         <nav id="site-nav" class="site-nav">
             <ul>
-                <li><a href="#"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-info site-nav--icon"></i>Acerca</a></li>
-                <li><a href="#"><i class="fa fa-pencil-alt site-nav--icon"></i>Blog</a></li>
-                <li><a href="#"><i class="fa fa-dollar-sign site-nav--icon"></i>Precios</a></li>
-                <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+                <li><a href="#inicio"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                <li><a href="#sobremi"><i class="fa fa-info site-nav--icon"></i>Sobre Mí</a></li>
+                <li><a href="#conocimientos"><i class="fa fa-pencil-alt site-nav--icon"></i>Conocimientos</a></li>
+                <li><a href="#experiencia"><i class="fa fa-dollar-sign site-nav--icon"></i>Experiencia</a></li>
+                <li><a href="#proyectos"><i class="fa fa-envelope site-nav--icon"></i>Proyectos</a></li>
             </ul>
         </nav>
       </div>
@@ -51,7 +51,7 @@
         <a class="Fondo-link icon-twitter-with-circle h4 px-1" href="https://twitter.com/elkabal82" target="_blanck"></a>
         <a class="Fondo-link icon-mail4 h4 px-1" href="mailto:edgardo.torres@hotmail.com"></a>
       </div>
-      <p class="Fondo-p">Aprendiendo: </p>
+      <!-- <p class="Fondo-p">Aprendiendo: </p> -->
     </div>
 
 
@@ -98,10 +98,10 @@
   </div>
 <!--Fin-home--->
 
-<section id="sobreMi" class="Main">
+<section id="sobremi" class="Main">
   <h2 class="Main-title">Sobre Mi</h2>
   <p class="Main-p">
-    <strong>Edgardo Torres</strong> aprendis de 
+    <strong>Edgardo Torres</strong> aprendiz de 
     <em> desarrollador web jr.</em>
     Haciendo magia con tecnologías como <span class="Tecnologias">HTML5</span>,
     <span class="Tecnologias">CSS3</span> y
@@ -111,8 +111,8 @@
   </p>
 </section>
 
-<section class="Conocimientos">
-  <h2 class="Conocimientos-title">CONOCIENTOS Basico</h2>
+<section id="conocimientos" class="Conocimientos">
+  <h2 class="Conocimientos-title">CONOCIMIENTOS Básicos</h2>
   <div class="Conocimientos-container">
     
     <div class="Conocimientos-card">
@@ -151,21 +151,21 @@
     <div class="Conocimientos-card">
       <h3 class="Conocimientos-cardTitle">PHP</h3>
       <p class="Conocimientos-cardText">
-        Conocimiento para poder crear un CRUD con PHP y poder interactuar con el framework LARAVEL.
+        Conocimiento para poder crear un CRUD con PHP e interactuar con el framework LARAVEL.
       </p>
     </div>
     <div class="Conocimientos-card">
       <h3 class="Conocimientos-cardTitle">Git</h3>
       <p class="Conocimientos-cardText">
-        Conocimiento para poder colaborar en Github, subiendo cambios, creando ramas y uniendolas a master.
+        Conocimiento para poder colaborar en Github, subiendo cambios, creando ramas y unirlas a master.
       </p>
     </div>
 
   </div>
 </section>
 
-<section class="Experience">
-  <h2 class="Experience-title">Experiencia Profecional</h2>
+<section id="experiencia" class="Experience">
+  <h2 class="Experience-title">Experiencia Profesional</h2>
   <div class="Experience-container">
     
     <div class="Experience-cart">
@@ -198,7 +198,7 @@
               <a href="https://getbootstrap.com/" target="_blanck"> Bootstrap4</a>,
               <a href="https://support.google.com/webmasters/answer/7451184?hl=es" target="_blanck"> SEO</a>
           </div>
-          <p class="Experience-text">Adaptacion de una pllantilla, aplicando html, css, bootstrap4, conociendo un poco sobre el SEO.</p>
+          <p class="Experience-text">Adaptación de una plantilla, aplicando html, css, bootstrap4, conociendo un poco sobre el SEO.</p>
       </div>
       <a href="https://etvb.github.io/proyecto-seavac/" class="Experience-link" target="_blanck">ir a la página</a>
     </div>
@@ -223,26 +223,33 @@
   </div>
 </section>
 
-<section class="Proyects">
+<section id="proyectos" class="Proyects">
   <h2 class="Proyects-title">PROYECTOS</h2>
   <div class="Proyects-container">
 
-    <div class="Proyects-cart">
-      <h3 class="Proyects-cartTitle">Vanilla Javascript</h3>
-      <p class="Proyects-text"></p>
-    </div>
+    
+      <h3 class="Proyects-sectionTitle">Vanilla Javascript</h3>
+      
+    
 
-    <div class="Proyects-cart">
-      <h3 class="Proyects-cartTitle">Flex y Grid</h3>
-      <p class="Proyects-text"></p>
-    </div>
+    
+      <h3 class="Proyects-sectionTitle">Flex y Grid</h3>
+      
+    
 
-    <div class="Proyects-cart">
-      <h3 class="Proyects-cartTitle">Wordpress</h3>
-      <p class="Proyects-text"></p>
-    </div>
+    
+      <h3 class="Proyects-sectionTitle">Wordpress</h3>
+      
+    
   </div>
 </section>
+
+<footer class="Footer">
+  <p class="Footer-text">
+    Edgardo Torres Vanden Bouch  &copy;2021
+
+  </p>
+</footer>
   
   <script src="./js/app.js"></script>
 </body>

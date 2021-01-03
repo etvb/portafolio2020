@@ -24,6 +24,7 @@ html {
    color: #ebebd3;
    padding: 1em 0;
    position: relative;
+   height: 50px;
  }
 
  .Container-nav {
@@ -159,10 +160,10 @@ html {
 }
 
 .Main {
-  padding: 20px 0;
+  padding: 50px 0;
   font-size: 2rem;
   text-align: center;
-  background-color: white;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 70%, rgba(234,234,234,1) 86%, rgba(0,0,0,1) 100%);
 }
 
 .Main-title {
@@ -208,7 +209,7 @@ html {
 }
 
 .Conocimientos-card:nth-child(1):before {
-  background: linear-gradient(315deg, #ff0057, #e64a19);
+  background: linear-gradient(315deg, #50a3a2, #53e3a6);
 }
 
 .Conocimientos-card:nth-child(2):before {
@@ -244,8 +245,8 @@ html {
 
 
 .Experience {
-  padding: 20px;
-  background-color: white;
+  padding: 50px 20px 50px 20px;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(0,0,0,1) 100%);
 }
 
 .Experience-title {
@@ -262,6 +263,7 @@ html {
   border: 2px solid black;
   margin: 10px;
   padding: 20px;
+  position: relative;
 }
 
 .Experience-imageContainer {
@@ -286,21 +288,50 @@ html {
   font-size: .8rem;
 }
 
+.Experience-text {
+  margin-bottom: 50px;
+}
+
 .Experience-link {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-radius: 10px;
   margin-top: 5px;
   display: inline-block;
   padding: 10px;
   /* background-color: black; */
+  position: absolute;
+  bottom: 20px;
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  color: white;
+  text-decoration: none;
+
 }
+
+
+
 
 .Proyects-title {
   text-align: center;
   color:white;
 }
 
+.Proyects-sectionTitle {
+  color: white;
+}
+.
+
+
+.Footer {
+  color: white;
+  text-align: center;
+}
+
 @media (min-width:700px){
+
+  .Conocimientos-title, .Experience-title, .Proyects-title {
+    font-size: 3rem;
+  }
+
   .menu-toggle{
       display: none;
   } 
