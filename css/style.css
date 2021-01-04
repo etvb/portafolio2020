@@ -52,12 +52,15 @@ html {
    flex-direction: column;
    /* margin-top: 20px; */
    width: 100%;
-   transition:ease-in;
+   transition: all 2s;
+   overflow: hidden;
 
  }
 
  .is-open {
-  display: none;
+  /* display: none; */
+  height: 0;
+  width: 0;
 }
 
  .a-nav {
