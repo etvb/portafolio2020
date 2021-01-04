@@ -392,6 +392,8 @@ html {
 
   .is-open {
     display: flex;
+    height: auto;
+    width: auto;
   }
   .site-nav li{
       display: inline-block;
