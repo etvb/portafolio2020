@@ -15,30 +15,31 @@
 </head>
 <body>
 
-
-  <div class="Fondo">
+  
+  <div class="Fondo" id="inicio">
     <!--home--->
     <!-- <div class="overlay position-absolute"></div> -->
-
-    <header id="inicio">
+    
+    <header class="Header">
       <div class="Container-nav">
         <!-- <div class="container"> -->
             <!-- <h1 class="logo">Logo <span>Empresa</span></h1> -->
         <!-- </div> -->
-        <nav id="site-nav" class="site-nav">
-            <ul>
-                <li><a href="#inicio"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
-                <li><a href="#sobremi"><i class="fa fa-info site-nav--icon"></i>Sobre Mí</a></li>
-                <li><a href="#conocimientos"><i class="fa fa-pencil-alt site-nav--icon"></i>Conocimientos</a></li>
-                <li><a href="#experiencia"><i class="fa fa-dollar-sign site-nav--icon"></i>Experiencia</a></li>
-                <li><a href="#proyectos"><i class="fa fa-envelope site-nav--icon"></i>Proyectos</a></li>
-            </ul>
+        <nav id="site-nav" class="site-nav is-open">
+            
+                <a class="a-nav" href="#inicio" onClick="cambiarClase()">Inicio</a>
+                <a class="a-nav" href="#sobremi" onClick="cambiarClase()">Sobre Mí</a>
+                <a class="a-nav" href="#conocimientos" onClick="cambiarClase()">Conocimientos</a>
+                <a class="a-nav" href="#experiencia" onClick="cambiarClase()">Experiencia</a>
+                <a class="a-nav" href="#proyectos" onClick="cambiarClase()">Proyectos</a>
+            
         </nav>
       </div>
       <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
           <div class="hamburger"></div>
       </div>
     </header>
+
     <div class="Fondo-textContenedor">
       <p class="Fondo-text">
         Adicto a la terminal y entusiasta de la tecnología, incursionando en el desarrollo web para encontrar nuevas formas de ayudar a las personas.
@@ -250,7 +251,7 @@
 
   </p>
 </footer>
-  
+  <script src="./js/ocultarMenu.js"></script>
   <script src="./js/app.js"></script>
 </body>
 </html>
