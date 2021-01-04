@@ -52,6 +52,8 @@ html {
    flex-direction: column;
    /* margin-top: 20px; */
    width: 100%;
+   transition:ease-in;
+
  }
 
  .is-open {
@@ -90,7 +92,7 @@ html {
   background: #464655;
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms; */
-}
+/* } */
 
 /* .site-nav-open{
   clip-path: circle(150% at top right);
@@ -344,6 +346,12 @@ html {
 .Proyects-title {
   text-align: center;
   color:white;
+}
+
+.Proyects-p {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .Proyects-sectionTitle {
