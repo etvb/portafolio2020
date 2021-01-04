@@ -400,11 +400,16 @@ html {
       border: none;
   }
 
-  .site-nav a{
+  .a-nav{
       padding: 0;
       margin-left: 3em;
       border-bottom: 0;
   }
+
+  .a-nav:hover{
+    transform: scale(1.2);
+  }
+  
 
   .site-nav--icon{
       display: none;
