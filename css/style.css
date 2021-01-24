@@ -33,7 +33,24 @@ html {
    justify-content: space-around;
    z-index: 1;
    transition: top .5s;
-
+ }
+ .U-green {
+   color: #50a3a2;
+ }
+ .U-purple {
+   color: #5d02ff;
+ }
+ .U-pink {
+   color: #e91e63;
+ }
+ .U-red {
+   color: #ff0000;
+ }
+ .U-orange {
+   color: #ffc107;
+ }
+ .U-blue {
+   color: #095379
  }
 
  .prueba {
@@ -357,9 +374,34 @@ html {
   font-size: 3rem;
 }
 
-.Proyects-sectionTitle {
+.Proyects-card {
+  width: 400px;
   color: white;
+  border: 1px solid white;
 }
+
+.Proyects-cardTitle {
+  text-align: center;
+}
+
+.Proyects-imageContainer {
+  width: 90%;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+.Poroyect-infoContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.Proyects-containerLinks {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 
 .Footer {
   color: white;
