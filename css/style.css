@@ -2,7 +2,6 @@
 html {
   box-sizing: border-box;
   /* border: 1px solid red; */
-
 }
  
 *, *:before, *:after {
@@ -34,6 +33,10 @@ html {
    z-index: 1;
    transition: top .5s;
  }
+
+ small {
+   font-size: 60%;
+ }
  .U-green {
    color: #50a3a2;
  }
@@ -51,6 +54,10 @@ html {
  }
  .U-blue {
    color: #095379
+ }
+
+ U-text-cente {
+   text-align: center;
  }
 
  .prueba {
@@ -361,7 +368,15 @@ html {
 }
 
 
+.Conteiner {
 
+}
+
+.Container-title {
+  color: white;
+  text-align: center;
+
+}
 
 .Proyects-title {
   text-align: center;
@@ -375,13 +390,14 @@ html {
 }
 
 .Proyects-card {
-  width: 400px;
+  width: 300px;
   color: white;
   border: 1px solid white;
 }
 
 .Proyects-cardTitle {
   text-align: center;
+  margin: 10px;
 }
 
 .Proyects-imageContainer {
@@ -394,6 +410,9 @@ html {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+.Proyect-infoContainerP {
+  margin: 10px 0;
 }
 
 .Proyects-containerLinks {
