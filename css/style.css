@@ -370,12 +370,16 @@ html {
 .Container-title {
   color: white;
   text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .Row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border-top: 1px solid #50a3a2;;
+  /* border-bottom: 1px solid #50a3a2;; */
 }
 
 .Proyects-card {
