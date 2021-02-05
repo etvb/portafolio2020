@@ -367,32 +367,22 @@ html {
 
 }
 
-
-.Conteiner {
-
-}
-
 .Container-title {
   color: white;
   text-align: center;
-
 }
 
-.Proyects-title {
-  text-align: center;
-  color:white;
-}
-
-.Proyects-p {
-  color: white;
-  text-align: center;
-  font-size: 3rem;
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .Proyects-card {
-  width: 300px;
+  width: 100%;
   color: white;
   border: 1px solid white;
+  margin: 5px;
 }
 
 .Proyects-cardTitle {
@@ -401,9 +391,12 @@ html {
 }
 
 .Proyects-imageContainer {
-  width: 90%;
+  width: 80%;
   /* text-align: center; */
   margin: 0 auto;
+}
+.Proyects-image {
+  width: 100%;
 }
 
 .Poroyect-infoContainer {
@@ -518,6 +511,14 @@ html {
 
   .Experience-cart {
     width: 380px;
+  }
+
+  .Row {
+    flex-wrap: wrap;
+  }
+
+  .Proyects-card {
+    width: 30%;
   }
 
 
